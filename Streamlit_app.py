@@ -17,7 +17,7 @@ if uploaded_file is None:
     st.info("Please upload 2026-1.xlsx")
     st.stop()
 
-df = pd.read_excel(uploaded_file)
+df = pd.read_excel(uploaded_file,engine="openpyxl")
 
 report = st.sidebar.selectbox(
     "Select Report",
