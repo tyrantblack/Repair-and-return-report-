@@ -65,7 +65,7 @@ def report1(df):
     ]
 
     return summary
-  if report == "1. Product Model Defective Count":
+if report == "1. Product Model Defective Count":
 
     result = report1(df)
 
